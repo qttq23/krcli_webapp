@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>sample_webapp</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">right_credential</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:9999/<datalist><option>http://localhost:9999/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=exampleInputEmail1<datalist><option>id=exampleInputEmail1</option><option>//input[@id='exampleInputEmail1']</option><option>//input</option><option>css=#exampleInputEmail1</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=exampleInputEmail1<datalist><option>id=exampleInputEmail1</option><option>//input[@id='exampleInputEmail1']</option><option>//input</option><option>css=#exampleInputEmail1</option></datalist></td><td>admin@gmail.com</td>
+</tr>
+<tr><td>type</td><td>id=exampleInputPassword1<datalist><option>id=exampleInputPassword1</option><option>//input[@id='exampleInputPassword1']</option><option>//div[2]/input</option><option>css=#exampleInputPassword1</option></datalist></td><td>admin</td>
+</tr>
+<tr><td>click</td><td>id=btnLogin<datalist><option>id=btnLogin</option><option>//button[@id='btnLogin']</option><option>//button</option><option>css=#btnLogin</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>id=divLoginState<datalist><option>id=divLoginState</option></datalist></td><td>Login successfully!</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">wrong_credential</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:9999/<datalist><option>http://localhost:9999/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=exampleInputEmail1<datalist><option>id=exampleInputEmail1</option><option>//input[@id='exampleInputEmail1']</option><option>//input</option><option>css=#exampleInputEmail1</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=exampleInputEmail1<datalist><option>id=exampleInputEmail1</option><option>//input[@id='exampleInputEmail1']</option><option>//input</option><option>css=#exampleInputEmail1</option></datalist></td><td>user1@gmail.com</td>
+</tr>
+<tr><td>type</td><td>id=exampleInputPassword1<datalist><option>id=exampleInputPassword1</option><option>//input[@id='exampleInputPassword1']</option><option>//div[2]/input</option><option>css=#exampleInputPassword1</option></datalist></td><td>user1</td>
+</tr>
+<tr><td>click</td><td>id=btnLogin<datalist><option>id=btnLogin</option><option>//button[@id='btnLogin']</option><option>//button</option><option>css=#btnLogin</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>id=divLoginState<datalist><option>id=divLoginState</option></datalist></td><td>Login failed!</td>
+</tr>
+</tbody></table>
+</body>
+</html>
